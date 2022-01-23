@@ -20,11 +20,18 @@ body {
     font-family: RajdhaniBold ;
     src: url(fonts/Rajdhani-Bold.ttf);
     }
+
+@font-face {
+    font-family: RajdhaniMedium;
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
 h1 {
     font-family: OriginTech;
     color: crimson;
     font-size: 48pt;
     }
+
+
 
 h2 {
     font-family: FutureLight ;
@@ -34,12 +41,8 @@ h2 {
 
 
 p {
-    float:right;
-    padding-right: 20px;
-    }
-
-p {
-    font-family: Rajdhani ;
+    padding: 20px;
+    font-family: RajdhaniMedium;
     color:black;
     font-size: 18pt;
     }
@@ -47,8 +50,6 @@ p {
 .navbar {
     background-color: cornflowerblue;
     overflow:hidden;
-    position: fixed;
-    bottom: 0;
     }
 
 .navbar a {
@@ -64,4 +65,14 @@ p {
 .navbar a:hover {
 	background-color:ghostwhite;
 	color:maroon;
+}
+
+.image {
+    padding: 20px;
+    float:left;
+    width:300px;
+}
+
+.paragraph {
+    padding: 20px;
 }
