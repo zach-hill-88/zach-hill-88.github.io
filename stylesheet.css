@@ -63,7 +63,7 @@ p {
 }
 
 .navbar a:hover {
-	background-color:ghostwhite;
+	background-color:#FFFDE4;
 	color:maroon;
 }
 
@@ -75,4 +75,16 @@ p {
 
 .paragraph {
     padding: 20px;
+}
+
+.WhiteText {
+    color: #fcdfe2;
+}
+
+a {
+    color:maroon;
+}
+
+a:hover {
+    color:crimson;
 }
