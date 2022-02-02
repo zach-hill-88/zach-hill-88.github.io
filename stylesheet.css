@@ -88,3 +88,8 @@ a {
 a:hover {
     color:crimson;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
