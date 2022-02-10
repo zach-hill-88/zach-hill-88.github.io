@@ -41,7 +41,7 @@ h2 {
 
 
 p {
-    padding: 20px;
+    padding: 40px;
     font-family: RajdhaniMedium;
     color:black;
     font-size: 18pt;
@@ -50,6 +50,8 @@ p {
 .navbar {
     background-color: cornflowerblue;
     overflow:hidden;
+    position:fixed;
+    bottom: 0;
     }
 
 .navbar a {
@@ -92,4 +94,29 @@ a:hover {
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 175px;
+    margin-bottom: 400px;
+}
+
+.grid-2{
+    background-color: #fcdfe2;
+}
+.header {
+	width: 100%;
+	background-color: black;
+	color: white;
+	box-sizing: border-box;
+	z-index: 1;
+	padding: 20px;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.assignments {
+    margin-bottom: 75px;
 }
