@@ -16,9 +16,14 @@ h1,h2,h3,h4 {font-family: 'Open Sans Condensed', sans-serif;
 	color:darkorange;
 }
 
+h1 {
+	font: 100;
+	padding-left: 30px;
+}
 #wrapper {
 	width: 1024px;
 	margin: 0 auto;
+	margin-top: 100px;
 	
 }
 
@@ -49,7 +54,7 @@ header nav a:hover, footer nav a:hover {
 	display: grid;
 	grid-template-columns: 1fr;
 	height: 400px;
-	border: 1px solid #4B4B4B;
+	border: 0px solid #4B4B4B;
 	background-image:url("images/HeroImage.jpg");
 	background-position:top;
 	background-size: cover;
@@ -62,6 +67,24 @@ header nav a:hover, footer nav a:hover {
 	font-size: 3em;
 }
 
+.navibar {
+	background-color: black;
+	overflow: hidden;
+	height: 50px;
+}
+
+.navibar a {
+	float:left;
+	text-align: center;
+	align-content: center;
+	padding: 14px 16px;
+	font-size: 18px;
+	color:darkorange;
+}
+
+.navibar a:hover {
+	color:whitesmoke;
+}
 /* Row with three boxes */
 
 .grid1 {
@@ -152,7 +175,51 @@ header nav a:hover, footer nav a:hover {
 }
 
 
+header {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+}
 
 
+footer {
+	display: grid;
+	grid-template-columns: auto;
+	background-color: black;
+	color:white; 
+}
 
+footer i {
+	margin: 1%;
+}
 
+/* this targets PHONES */
+@media screen and (max-width: 640px) {
+	footer {
+		text-align: center;
+		padding: 4%; 
+		box-sizing: border-box;
+	}
+
+}
+
+/* this targets TABLETS */
+@media screen and (min-width: 640px) and (max-width: 1024) {
+	footer {
+		text-align: center;
+		padding: 4%; 
+		box-sizing: border-box;
+	}
+
+}
+
+/* this targets DESKTOP */
+@media screen and (min-width: 1024px) {
+	footer {
+		text-align: center;
+		padding: 4% 0;
+		box-sizing: border-box;
+	}
+}
