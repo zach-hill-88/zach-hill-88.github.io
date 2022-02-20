@@ -64,7 +64,7 @@ header nav a:hover, footer nav a:hover {
 
 .hero  h1 {
 	color: white;
-	text-shadow: 4px 4px blue;
+	text-shadow: 4px 4px navajowhite;
 	font-size: 3em;
 }
 
@@ -90,7 +90,7 @@ header nav a:hover, footer nav a:hover {
 
 .grid1 {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(5,1fr);
 	grid-column-gap: 10px;
 	margin-top: 10px;
 }
@@ -191,11 +191,35 @@ footer {
 	background-color: black;
 	color: navajowhite; 
 	width: 100%;
+	text-align: center;
+	padding: 4% 0;
+	box-sizing: border-box;
+}
+
+.threeColumns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2%;
 }
 
 footer i {
-	margin: 1%;
+	margin: 1%;	
+}
+
+
+
+/* this targets TABLETS */
+@media screen and (max-width: 1024) {
+	.grid1 {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-column-gap: 10px;
+		margin-top: 10px;
+		background-color: #3B4371;
+	}
 	
+
+
 }
 
 /* this targets PHONES */
@@ -204,8 +228,11 @@ footer i {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-column-gap: 10px;
+		grid-row: inherit;
+		-ms-grid-row-align: center;
 		margin-top: 10px;
-		width: 95%;
+		width: 300px;
+		align-items: center;
 	}
 	
 	.grid2 {
@@ -225,36 +252,15 @@ footer i {
 		box-sizing: border-box;
 	}
 
-
-}
-
-/* this targets TABLETS */
-@media screen and (min-width: 640px) and (max-width: 1024) {
-	footer {
-		text-align: center;
-		padding: 4%; 
-		box-sizing: border-box;
-	}
 	.threeColumns {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		column-gap: 2%;
 	}
 
-}
-
-
-/* this targets DESKTOP */
-@media screen and (min-width: 1024px) {
-	footer {
-		text-align: center;
-		padding: 4% 0;
-		box-sizing: border-box;
+	.navibar {
+		display: none;
 	}
 
-	.threeColumns {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 2%;
-	}
 }
+
