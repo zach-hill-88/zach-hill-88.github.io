@@ -84,7 +84,7 @@ header nav a:hover, footer nav a:hover {
 }
 
 .navibar a:hover {
-	color:whitesmoke;
+	color:navajowhite;
 }
 /* Row with three boxes */
 
@@ -189,7 +189,7 @@ footer {
 	display: grid;
 	grid-template-columns: auto;
 	background-color: black;
-	color:white; 
+	color: navajowhite; 
 	width: 100%;
 }
 
@@ -208,8 +208,17 @@ footer i {
 		width: 95%;
 	}
 	
+	.grid2 {
+		width: 95%;
+		display: none;
+
+	}
 	
-	
+	.grid3 {
+		width: 95%;
+		display:none;
+	}
+
 	footer {
 		text-align: center;
 		padding: 4%; 
