@@ -17,6 +17,19 @@ header {
 	z-index: 1;
 	height: 75px;
 }
+/* navigation bar */
+.topnav {
+   overflow:hidden;
+}
+.topnav a {
+   float:right;
+   color:gold;
+   display:block;
+   padding: 14px 16px;
+}
+.topnav input[type=text] {
+   float: right;
+}
 /* pleasing color gradient */
  body {
      margin-top: 100px;
