@@ -1,12 +1,34 @@
+
 <html>
 <head>
-<title>Week 5 - School Choice Form</title><!------This form will be for parents hoping to enroll their children in one of three Tacoma Public Schools-->
+<title>Week 5 - School Choice Form</title>
+
+<!------This form will be for parents hoping to enroll their children in one of three Tacoma Public Schools-->
 <script>
     function getOption () {
+
     var obj = document.getElementById ("mySelect_2");
-    document.getElementById("demo").innerHTML =
-    obj.options[obj.selectedIndex].text; 
+
+    switch(obj.selectedIndex) {
+        case 0:
+            document.getElementById("SchoolInfo").innerHTML = 
+            "Blix Elementary is the only school in Tacoma with a dual-langauge immersion program.";
+            break;
+
+        case 1:
+            document.getElementById("SchoolInfo").innerHTML =
+            "Located near Point Defiance Park, Zoo, and Aquarium, Point Defiance Elementary is a great choice for nature-lovers.";
+            break;
+
+        case 2: 
+            document.getElementById("SchoolInfo").innerHTML = 
+            "Tacoma Online allows students to learn from the comfort of their own homes.";
+            break;
+    }
+    /*document.getElementById("demo").innerHTML =
+    obj.options[obj.selectedIndex].text; */
 }
+
 /*---------Put other slideshow stuff for [slideshow_container]-------------------------*/
 </script>
 <link href="stylesheet3.css" rel="stylesheet" type="text/css">
@@ -23,10 +45,7 @@
         </div>
     </header>
 <!---------Put a slideshow in [slideshow_container]------------------------->
-<form action="/action_page.php">
-    <label for="#">Student's Eye Color:</label><!--------this is a joke :-)-->
-    <input type="color" id="#" name="#">
-    <input type="submit"><br><br>
+<form action="#">
 <!-----Student’s name----[input type: text]---------------->
     <label for="sfname">Student's First Name:</label>
     <input type="text" id="sfname" name="sfname"><br><br>
@@ -95,15 +114,18 @@
     </select>
     <br><br>
 <!-------School Choice-------------->
-
-    Which school are you interested in enrolling your child in? <br>
+   
+Which school are you interested in enrolling your child in? <br>
     <select id="mySelect_2">
       <option>Blix Elementary School</option>
       <option>Point Defiance Elementary School</option>
       <option>Tacoma Online</option>
     </select>
     <br><br>
-    <input type="button" onclick="getOption()" value="Click to select school">
+
+<input type="button" onclick="getOption()" value="Click to learn more">
+<p id="SchoolInfo"></p>
+
 </form>
 <p id="demo"></p>
 

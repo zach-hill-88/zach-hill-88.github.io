@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Week 5B - Temperature Converter</title>
+<script>
+/* This function will convert Celsius to Fahrenheit, using the formula: (_°C x 1.8) + 32 = _°F */
+    function CtempConvert (tempC)
+    {
+        var tempC;
+        var TempF= (tempC * 1.8) + 32;
+        console.log(TempFahrenheit);
+        document.getElementById(result1).innerHTML = "Your temperature in Fahrenheit is" + TempF;
+
+    }
+/* This function will convert Fahrenheit to Celsius, using the formula: (_°F - 32) x 0.55555555556 = _°C */
+    function FtempConvert (TempF)
+    {
+        var tempF;
+        var TempC= (tempF - 32) * 0.55555555555556;
+        console.log(TempFahrenheit);
+        document.getElementById(result1).innerHTML = "Your temperature in Celsius is" + TempC;
+    }
+</script>
+
+
+
+
+</head>
+
+<body>
+    <header>
+    <h1>C°/F° Converter</h1>
+    </header>
+<form action="#">
+    <h3>Enter a value in F° to convert to C°</h3>
+        <label for="tempF">Temperature in F°:</label> 
+        <input type="number" id="tempF" name="tempF">
+        <br><br>
+        <input type="button" onclick="FtempConvert()" value="Click to convert">
+ 
+    <h3>Enter a value in C° to convert to F°</h3> 
+        <label for="tempC">Temperature in C°:</label> 
+        <input type="number" id="tempC" name="tempC" >
+        <br><br>
+        <input type="button" onclick="CtempConvert()" value="Click to convert">
+</form>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
