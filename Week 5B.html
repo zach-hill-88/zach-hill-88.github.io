@@ -1,6 +1,43 @@
 <html>
 <head>
 <title>Week 5B - Temperature Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    @font-face {
+    font-family: OriginTech;
+    src: url(fonts/OriginTech\ personal\ use.otf);  
+    }
+    
+    .bg {
+      /* The image used */
+      background-image: url("images/ice_ice_baby.jpg");
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .text {
+        position:absolute;
+        left: 25px;
+        top: 0;
+        color:antiquewhite;
+    }
+
+    h1 {
+        font-family: OriginTech;
+    }
+    </style>
 <script>
 /* This function will convert Celsius to Fahrenheit, using the formula: (_°C x 1.8) + 32 = _°F */
     function CtempConvert (tempC)
@@ -20,6 +57,7 @@
         document.getElementById(result1).innerHTML = "Your temperature in Celsius is" + TempC;
     }
 </script>
+<link href="stylesheet4.css" rel="stylesheet" type="text/css">
 
 
 
@@ -27,6 +65,8 @@
 </head>
 
 <body>
+<div class="bg"></div>
+<div class="text">
     <header>
     <h1>C°/F° Converter</h1>
     </header>
@@ -39,10 +79,11 @@
  
     <h3>Enter a value in C° to convert to F°</h3> 
         <label for="tempC">Temperature in C°:</label> 
-        <input type="number" id="tempC" name="tempC" >
+        <input type="number" id="tempC" name="tempC">
         <br><br>
         <input type="button" onclick="CtempConvert()" value="Click to convert">
 </form>
+</div>
 
 
 
