@@ -25,24 +25,24 @@
             "Tacoma Online allows students to learn from the comfort of their own homes.";
             break;
     }
-    /*document.getElementById("demo").innerHTML =
-    obj.options[obj.selectedIndex].text; */
+    /* Switch case function, thanks Giancarlo */
 }
 
 /*---------Put other slideshow stuff for [slideshow_container]-------------------------*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+/*--------Next/previous controls-------*/
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+/*---------Thumbnail image controls----------*/
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+/*---------showSlides function from w3schools---------*/
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -59,7 +59,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
 <link href="stylesheet3.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <header class="two_columns">
@@ -81,7 +83,7 @@ function showSlides(n) {
 <!-------- Full-width images with number and caption text ------------------>
     <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="images/Point-Defiance-Park.png" style="width:100%">
+        <img src="images/Point-Defiance-Parkk.jpg" style="width:100%">
         <div class="cap_text">Point Defiance Elementary</div>
     </div>
 
@@ -93,7 +95,7 @@ function showSlides(n) {
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <img src="images/Blix.jpg" style="width:100%">
+        <img src="images/Blixx.jpg" style="width:100%">
         <div class="cap_text">Blix Elementary</div>
     </div>
 
@@ -194,6 +196,7 @@ Which school are you interested in enrolling your child in? <br>
 <p id="SchoolInfo"></p>
 
 </form>
+
 <p id="demo"></p>
 
 

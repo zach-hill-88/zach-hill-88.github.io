@@ -37,6 +37,10 @@
     h1 {
         font-family: OriginTech;
     }
+
+    p {
+        color:crimson;
+    }
     </style>
 <script>
 /* This function will convert Celsius to Fahrenheit, using the formula: (_°C x 1.8) + 32 = _°F */
@@ -47,7 +51,7 @@
         var tempCel = Number(document.getElementById(id).value); /*new way to call function*/
         tempFah = (tempCel * 1.8) + 32; /*new way to write function*/
         console.log(tempCel);
-        document.getElementById("result2").innerHTML = "Your temperature in Fahrenheit is " + tempFah;
+        document.getElementById("result2").innerHTML = "Your temperature in Fahrenheit is "  + tempFah; 
 /* fixed "''" in output, added a space, and changed to variable tempFah */
     }
 /* This function will convert Fahrenheit to Celsius, using the formula: (_°F - 32) x 0.55555555556 = _°C */
@@ -57,7 +61,7 @@
 
         var tempFah = Number(document.getElementById(id).value); /*new way to call function*/
         tempCel = (tempFah - 32) * 0.55555555555556; /*new way to write function*/
-        console.log(tempFah);
+        console.log(tempFah); /* thanks Nicole */
         document.getElementById("result1").innerHTML = "Your temperature in Celsius is " + tempCel;
 /* fixed "''" in output, added a space, and changed to variable tempCel */
     }
@@ -83,7 +87,7 @@
         <br><br>
         <input type="button" onclick="FtempConvert('tempF')" value="Click to convert">
 
-    <p id="result1"> The results will go here</p> <!---different results for different values-->
+    <p id="result1"></p> <!---different results for different values-->
  
     <h3>Enter a value in C° to convert to F°</h3> 
         <label for="tempC">Temperature in C°:</label> 
@@ -91,7 +95,7 @@
         <br><br>
         <input type="button" onclick="CtempConvert('tempC')" value="Click to convert">
 
-    <p id="result2"> The results will go here</p> <!---different results for different values-->
+    <p id="result2"></p> <!---different results for different values-->
 </form>
 </div>
 
