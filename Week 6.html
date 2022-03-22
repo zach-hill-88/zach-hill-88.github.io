@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Week 6 - Simple Objects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    
+        @font-face {
+        font-family: OriginTech;
+        src: url(fonts/OriginTech\ personal\ use.otf);  
+        }
+        
+        .bg {
+    /* This is the image used, which was downloaded from guitarcenter.com */
+          background-image: url("images/jaguar2.jpg");
+        
+    /* This makes the full image visible with scrolling*/
+          height: 220%; 
+        
+    /* This centers and scales the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    /* This fixes the text to the top left corner, with a nice margin and places it in front of the background image*/
+        .text {
+            position:absolute;
+            left: 25px;
+            top: 0;
+            color:black;
+        }
+    /* This is the same font I used for the header of my index page */
+        h1 {
+            font-family: OriginTech;
+        }
+    
+        p {
+            color:crimson;
+        }
+        </style>
+<script>
+    var myGuitar = { //could also use 'let' or 'const' tags
+        make: "Fender", //string
+        model: "Jaguar", //string
+        year: 1989, //number
+        color: "sunburst", //string, commas after everything
+
+    describeGuitar: function ()
+        {
+            return ("My favorite guitar is a " + this.year + " " + this.make + " " + this.model + ". It has a " + this.color + " paintjob.");
+        } //no semi-colon after closing tag for function
+    }; //closing tag for object contains the function 'describeGuitar', has a semi-colon
+</script>
+</head>
+<body>
+<div class="bg"></div>
+<div class="text">
+<h1>My Favorite Guitar</h1>
+<p id="favGuitar"></p>
+<button onclick="document.getElementById('favGuitar').innerHTML = myGuitar.describeGuitar()">Click to find out more!</button>
+</div>
+</body>
+</html>
