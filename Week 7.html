@@ -20,7 +20,7 @@
             if (this.portion = "individual") /*check to see if this is the correct syntax for parentheses*/
                 price = "$9.99";
 
-            if (this.protion = "family")
+            if (this.portion = "family")
                 price = "$25.99";         /* no 'else' statement used, will this be a problem?*/
             
             var OrderString = "Your order is a(n) " + this.portion + "pasta plate with " + this.pasta + ", " + this.sauce + ", " + this.veggies + ", " + this.meat + ", and " + this.cheese + ". Your total for this orer will be " + this.price + ". Enjoy!"
@@ -55,7 +55,7 @@ function processForm() {
 /* This is the image used, which was downloaded from pexels.com */
       background-image: url("images/pasta.jpg");
     
-/* This makes the image take up the full height of the screen*/
+/* This makes the image take up more than the full height of the screen, allowing scrolling*/
       height: 220%; 
     
 /* This centers and scales the image nicely */
@@ -64,7 +64,7 @@ function processForm() {
       background-size: cover;
     }
 .container {
-        position:fixed;
+        position:absolute;
         left: 25px;
         top: 0;
         color:darkred;
@@ -74,7 +74,11 @@ function processForm() {
     background-color: blanchedalmond;
     width: 30%;
 
-    
+.header {
+    position: fixed;
+    background-color: black;
+    display: none;
+}    
 
 
 }
@@ -84,6 +88,10 @@ function processForm() {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!-----<header class="header">
+    <h1>Ristorante Famiglia Goldoni</h1>
+    <h3>"Our Pasta is more than just food, it's Pure Art."</h3>
+</header>-------->
 <!----This is where I will place a background image-->
 <div class="bg"></div>
 <!----This form is a mash-up of a Bootstrap example from w3schools and our in-class Week 7 example-->
@@ -96,13 +104,13 @@ function processForm() {
         <button class="btn btn-default dropdown-toggle" type="button" id="pasta" data-toggle="dropdown">Pasta
         <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spaghetti</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Trenette</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fusilli</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Farfalle</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mezze Penne</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" value="Spaghetti">Spaghetti</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" value="Linguine">Linguine</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" value="Fusilli">Fusilli</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" value="Farfalle">Farfalle</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" value="Penne">Mezze Penne</a></li>
           <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Our Pasta</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.jessicagavin.com/types-of-pasta/">About Our Pasta</a></li>
         </ul>
       </div>
     </div>
@@ -112,13 +120,13 @@ function processForm() {
           <button class="btn btn-default dropdown-toggle" type="button" id="sauce" data-toggle="dropdown">Sauce
           <span class="caret"></span></button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ragù alla Bolognese (Meat-Based)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Carbonara (Meat-Based)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pesto (Vegetarian)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alfredo (Vegetarian)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pasta al Pomodoro (Vegan)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" value="Ragù alla Bolognese">Ragù alla Bolognese (Meat-Based)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" value="Carbonara">Carbonara (Meat-Based)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" value="Pesto">Pesto (Vegetarian)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" value="Alfredo">Alfredo (Vegetarian)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" value="Pasta al Pomodoro">Pasta al Pomodoro (Vegan)</a></li>
             <li role="presentation" class="divider"></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Our Sauces</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://unocasa.com/blogs/tips/types-of-pasta-sauce">About Our Sauces</a></li>
           </ul>
         </div>
       </div>
@@ -152,14 +160,18 @@ function processForm() {
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Parmigiano Reggiano</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pecorino</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grana Padano</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Asiago</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mozzarella</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cooksinfo.com/italian-cheeses#:~:text=The%20four%20most%20popular%20Italian,local%20character%20to%20the%20cheeses.">About Our Cheeses</a></li>
           </ul>
         </div>
     </div>
   
 
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-default" onclick="document.getElementById(myPasta).innerHTML = myPasta.showOrderAndPrice()">Submit</button>
   </form>
+  <p id="myPasta">Your Order will appear here:</p>
 </div>
 
 </body> 
