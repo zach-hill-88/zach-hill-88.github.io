@@ -104,11 +104,11 @@ function processForm() {
         <button class="btn btn-default dropdown-toggle" type="button" id="pasta" data-toggle="dropdown">Pasta
         <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" value="Spaghetti">Spaghetti</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" value="Linguine">Linguine</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" value="Fusilli">Fusilli</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" value="Farfalle">Farfalle</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" value="Penne">Mezze Penne</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" id="pasta" value="Spaghetti">Spaghetti</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" id="pasta" value="Linguine">Linguine</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" id="pasta" value="Fusilli">Fusilli</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" id="pasta" value="Farfalle">Farfalle</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" id="pasta" value="Penne">Mezze Penne</a></li>
           <li role="presentation" class="divider"></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.jessicagavin.com/types-of-pasta/">About Our Pasta</a></li>
         </ul>
@@ -120,11 +120,11 @@ function processForm() {
           <button class="btn btn-default dropdown-toggle" type="button" id="sauce" data-toggle="dropdown">Sauce
           <span class="caret"></span></button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" value="Ragù alla Bolognese">Ragù alla Bolognese (Meat-Based)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" value="Carbonara">Carbonara (Meat-Based)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" value="Pesto">Pesto (Vegetarian)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" value="Alfredo">Alfredo (Vegetarian)</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" value="Pasta al Pomodoro">Pasta al Pomodoro (Vegan)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="sauce" value="Ragù alla Bolognese">Ragù alla Bolognese (Meat-Based)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="sauce" value="Carbonara">Carbonara (Meat-Based)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="sauce" value="Pesto">Pesto (Vegetarian)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="sauce" value="Alfredo">Alfredo (Vegetarian)</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="sauce" value="Pasta al Pomodoro">Pasta al Pomodoro (Vegan)</a></li>
             <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="https://unocasa.com/blogs/tips/types-of-pasta-sauce">About Our Sauces</a></li>
           </ul>
@@ -133,22 +133,22 @@ function processForm() {
     <div class="form-group">
       <label for="veggies">Choose Your Veggies:</label>
       <div class="checkbox"  class="form-control" id="veggies" name="veggies">
-        <label><input type="checkbox">Mushrooms</label><br>
-        <label><input type="checkbox">Zucchini</label><br>
-        <label><input type="checkbox">Eggplant</label><br>
-        <label><input type="checkbox">Asparagus</label><br>
-        <label><input type="checkbox">Roasted Bell Peppers</label><br>
-        <label><input type="checkbox">Sundried Tomatoes</label><br>
-        <label><input type="checkbox">Artichoke Hearts</label><br>
+        <label><input type="checkbox" id="veggies" value="Mushrooms">Mushrooms</label><br>
+        <label><input type="checkbox" id="veggies" value="Zucchini">Zucchini</label><br>
+        <label><input type="checkbox" id="veggies" value="Eggplant">Eggplant</label><br>
+        <label><input type="checkbox" id="veggies" value="Asparagus">Asparagus</label><br>
+        <label><input type="checkbox" id="veggies" value="Roasted Bell Peppers">Roasted Bell Peppers</label><br>
+        <label><input type="checkbox" id="veggies" value="Sundried Tomatoes">Sundried Tomatoes</label><br>
+        <label><input type="checkbox" id="veggies" value="Artichoke Hearts">Artichoke Hearts</label><br>
     </div>
     </div>
     <div class="form-group">
         <label for="meat">Choose Your Protein:</label>
         <div class="checkbox"  class="form-control" id="meat" name="meat">
-          <label><input type="checkbox">Chicken</label><br>
-          <label><input type="checkbox">Meatballs</label><br>
-          <label><input type="checkbox">Italian Sausage</label><br>
-          <label><input type="checkbox">Marinated Tofu</label><br>  
+          <label><input type="checkbox" id="meat" value="Chicken">Chicken</label><br>
+          <label><input type="checkbox" id="meat" value="Meatballs">Meatballs</label><br>
+          <label><input type="checkbox" id="meat" value="Italian Sausage">Italian Sausage</label><br>
+          <label><input type="checkbox" id="meat" value="Marinated Tofu">Marinated Tofu</label><br>  
       </div>
     </div>
     <div class="form-group">
@@ -157,11 +157,11 @@ function processForm() {
           <button class="btn btn-default dropdown-toggle" type="button" id="cheese" data-toggle="dropdown">Cheese
           <span class="caret"></span></button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Parmigiano Reggiano</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pecorino</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grana Padano</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Asiago</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mozzarella</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="cheese" value="Parmigiano Reggiano">Parmigiano Reggiano</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="cheese" value="Pecorino">Pecorino</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="cheese" value="Grana Padano">Grana Padano</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="cheese" value="Asiago">Asiago</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" id="cheese" value="Fresh Mozzarella">Fresh Mozzarella</a></li>
             <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cooksinfo.com/italian-cheeses#:~:text=The%20four%20most%20popular%20Italian,local%20character%20to%20the%20cheeses.">About Our Cheeses</a></li>
           </ul>
@@ -175,29 +175,4 @@ function processForm() {
 </div>
 
 </body> 
-</html>
-</head>
-<body>
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
