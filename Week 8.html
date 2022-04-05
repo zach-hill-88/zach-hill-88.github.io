@@ -11,7 +11,7 @@
 
     function showWaitlist ()
     {
-        document.getElementById("waitlist").innerHTML = "Here are the names currently on the waitlist:  " + applicantNames;
+        document.getElementById("waitlist").innerHTML = "Here are the names currently on the waitlist: "  + applicantNames;
     }
 
     function addName ()
@@ -43,9 +43,14 @@
         </div>
         </section>
     </header>
-<p id=""> Here is where some text goes</p>
+<p>Tacoma Public Schools are so great that there is a waitlist to enroll your child. <br> Many high profile individuals from around the country,
+    and even the world, have signed up to enroll their children.  <br> Click the buttons below to add your name to the waitlist, or view the current waitlist. <br>
+    If you get impatient with waiting, we have added a new feature which allows you to remove others from the waitlist, improving your child's chances of attending. <br>
+    You can access this feature by clicking the button that says "Remove from the Waitlist."
+
+</p>
     <br>
-<p id="waitlist">Here is where some other text goes</p>
+<p id="waitlist"></p>
     <br>
 <input type="button" value="Add Your Name" onclick="addName()">
 <input type="button" value="Show Waitlist" onclick="showWaitlist()">

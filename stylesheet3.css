@@ -53,6 +53,10 @@ h1 a:hover {
    padding: 10px;
    column-gap: 2%;
 }
+
+p {
+   width: 50%;
+}
 /* Slideshow container */
 .slideshow-container {
    max-width: 1000px;
