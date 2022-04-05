@@ -39,6 +39,14 @@ header {
    float: right;
 }
 
+h1 a {
+   color:gold;
+}
+
+h1 a:hover {
+   color: lightgoldenrodyellow;
+}
+
 .two_columns {
    display: grid;
    grid-template-columns: 1fr 1fr;

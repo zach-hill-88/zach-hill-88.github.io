@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Week 8 - School Waiting List (Loops & Arrays)</title>
+<script type="text/javascript">
+    //This website will be a waiting list, linked to Week 5, where parents can add their names to a waiting list to enroll in Tacoma Public Schools
+    /* random celebs            0                 1              2                 3                     4                       5            */
+    var applicantNames = [" Aziz Ansari", " Jeff Bezos", " Camilla Cabello", " Libby Dankman", " Will and Jada Pinkett Smith", " Patricia Teheran" ]
+
+    function showWaitlist ()
+    {
+        document.getElementById("waitlist").innerHTML = "Here are the names currently on the waitlist:  " + applicantNames;
+    }
+
+    function addName ()
+    {
+        applicantNames[applicantNames.length] = prompt("Add your name to the waiting list");
+    }
+
+    function removeFromWaitlist ()
+    {
+        alert(applicantNames.shift() + " you can now enroll in the school of your choice.");
+        showWaitlist();
+    }
+</script>
+<!---To create consistency, I will use the same stylesheet as Week 5-->
+<link href="stylesheet3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="two_columns">
+        <section>
+        <h1><a href="https://www.tacomaschools.org/">Tacoma Public Schools</a></h1>
+        </section>
+<!---------Put a searchbar in [topnav]------------------------->
+        <section>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Search..">
+        </div>
+        </section>
+    </header>
+<p id=""> Here is where some text goes</p>
+    <br>
+<p id="waitlist">Here is where some other text goes</p>
+    <br>
+<input type="button" value="Add Your Name" onclick="addName()">
+<input type="button" value="Show Waitlist" onclick="showWaitlist()">
+<input type="button" value="Remove from the Waitlist" onclick="removeFromWaitlist()">
+</body>
+</html>
