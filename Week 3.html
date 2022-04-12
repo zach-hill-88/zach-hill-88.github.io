@@ -2,16 +2,26 @@
 <head>
     <title>Week 3 - Responsive Web Shell</title>
     <link  href="responsiveStyle.css" rel="stylesheet" type="text/css">
+    <script>
+        function dropdownMenu (){
+            var x = document.getElementById("dropClick");//by creating the variable "x" to represent this action, I can save time and space in the future
+            if (x.className == "topnav"){
+                x.className += " responsive";//this will change topnav to topnav.responsive in mobile
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
-        <ul class="topnav">
-            <li><a href="#home">Home</a></li>
+        <ul class="topnav" id="dropClick"> <!--adding an id allows me to apply javaScript to this dropdown menu-->
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#plans">Plans & Pricing</a></li>
-            <li class="topnav-right"><a href="#hell">&#9776;</a></li>
-            <li class="dropdownIcon"><a href="">&#9776;</a></li>
+            <!----li class="topnav-right"><a href="#" onclick="dropdownMenu ()">&#9776;</a></li>--->
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu ()">&#9776;</a></li>
         </ul>
     </nav>
 </body>

@@ -28,10 +28,10 @@ ul.topnav li.topnav-right {
     float: right;
 }
 
-ul.topnav li.topnav-right a:hover {
+/*ul.topnav li.topnav-right a:hover {
     color: red;
     background-color: antiquewhite;
-}
+}*/
 ul.topnav li a {
     display: block;
     text-decoration: none;
@@ -51,6 +51,7 @@ nav a:hover {
 
 ul.topnav li.dropdownIcon {
     display: none;
+    color:blanchedalmond;
 }
 
 
@@ -59,7 +60,38 @@ ul.topnav li.dropdownIcon {
 
 /* for mobile devices */
 @media screen and (max-width: 680px) {
-    ul.topnav li:not(:nth-child(5)) {
+    ul.topnav li:not(:nth-child(1)) { /* this ensures that only the home button is visible on mobile devices*/
         display: none;
+    }
+
+
+    ul.topnav li.dropdownIcon {
+        display:block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav li.dropdownIcon a:hover {
+        color:red;
+        background-color: antiquewhite;
+    }
+
+    ul.topnav.responsive {
+        position:relative;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
     }
 }
