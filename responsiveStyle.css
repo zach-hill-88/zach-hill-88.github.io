@@ -164,6 +164,22 @@ div.rightSide-col {
     margin-left: 3%;
 }
 
+div.secondShell img {
+    height: 200px;
+    display:block;
+    margin:auto;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+div.thirdShell img {
+    height: 200px;
+    display:block;
+    margin:auto;
+    margin-right: 30px;
+    padding: 20px;
+}
+
 h1.large {
     color: darkslategrey;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -238,7 +254,7 @@ input[type="password"] {
 
 
 /* for mobile devices */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 750px) {
     ul.topnav li:not(:nth-child(1)) { /* this ensures that only the home button is visible on mobile devices*/
         display: none;
     }
@@ -281,6 +297,11 @@ input[type="password"] {
 
     .col-4 { /* this stacks the three columns vertically in mobile*/
         width: 100%;
+        margin: 0;
+    }
+
+    .col-3 {
+        width:100%;
         margin: 0;
     }
 
