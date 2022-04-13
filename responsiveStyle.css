@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*padding-top: 50px;*/
+    padding-top: 50px;
     z-index: 0;
     top: 0;
 }
@@ -121,6 +121,28 @@ ul.topnav li.dropdownIcon {
     background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+button.learnMore {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:blanchedalmond;
+    background-color: peru;
+    padding: 15px 60px;
+    display:block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+    margin:auto;
+}
+
+button.Submit {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blanchedalmond;
+    background-color: gray;
+    margin-left: 75px;
+}
+
 div.box {
     text-align: center;
     padding: 10px;
@@ -129,6 +151,7 @@ div.box {
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),
     0 2px 3px 0 rgba(0,0,0,.1);
 }
+
 div.guitar {
 
 }
@@ -184,6 +207,15 @@ label {
 p {
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+article p {
+    padding: 20px;
+    font-size: 18px;
+    font-weight:100;
+    color:darkslategray;
+    background-color: blanchedalmond;
+    margin: 30px;
 }
 
 input[type="email"] {
