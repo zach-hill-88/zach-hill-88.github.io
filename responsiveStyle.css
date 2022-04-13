@@ -135,6 +135,14 @@ button.learnMore {
     margin:auto;
 }
 
+button.learnMore a {
+    color:blanchedalmond;
+}
+
+button.learnMore a:hover {
+    color:pink;
+}
+
 button.Submit {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -170,6 +178,8 @@ div.secondShell img {
     margin:auto;
     margin-left: 30px;
     padding: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
 }
 
 div.thirdShell img {
@@ -178,6 +188,8 @@ div.thirdShell img {
     margin:auto;
     margin-right: 30px;
     padding: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
 }
 
 h1.large {
@@ -196,7 +208,6 @@ h1 {
 }
 
 h2 {
-    margin-left: 60px;
     color: peru;
     line-height: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -232,6 +243,8 @@ article p {
     color:darkslategray;
     background-color: blanchedalmond;
     margin: 30px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
 }
 
 input[type="email"] {
@@ -250,7 +263,22 @@ input[type="password"] {
     background-color: blanchedalmond;
 }
 
+footer {
+    background-color: darkslategray;
+    text-align: center;
+}
 
+footer p {
+    color:blanchedalmond;
+    text-align: center;
+}
+ footer a {
+     color: blanchedalmond;
+ }
+
+ footer a:hover {
+    color:pink;
+}
 
 
 /* for mobile devices */
@@ -290,6 +318,12 @@ input[type="password"] {
         text-align: left;
     }
 
+    .bg {
+        width: 100%;
+        margin:0;
+        max-height:1000px;
+    }
+
     .col-6 { /* this stacks the two columns vertically in mobile*/
         width: 100%;
         margin: 0;
@@ -312,5 +346,11 @@ input[type="password"] {
         overflow:hidden;
     }
 
+    div.secondShell img {
+        margin-bottom: 10px;
+    }
+    div.thirdShell img {
+        margin-top: 10px;
+    }
 
 }
