@@ -171,6 +171,19 @@ footer a:hover {
     color:navajowhite;
 }
 
+/* for tablets */
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    #wrapper {
+        width:100%;
+        margin:auto;
+    } 
+    
+    .container {
+        width: 100%;
+        margin:auto;
+    }
+}
+
 /* for mobile devices */
 @media screen and (max-width: 750px) {
     ul.topnav li:not(:nth-child(1)) { /* this ensures that only the home button is visible on mobile devices*/
