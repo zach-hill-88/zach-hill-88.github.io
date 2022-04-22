@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Week 9 - Final Project Part 1</title>
+    <link href="responsiveStyle2.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="FontAwesome/css/all.css" rel=stylesheet type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> //I learned this from a Udemy course, a simple way to make a dropDown menu
+        function dropdownMenu (){
+            var x = document.getElementById("dropClick");//by creating the variable "x" to represent this action, I can save time and space in the future
+            if (x.className == "topnav"){
+                x.className += " responsive";//this will change topnav to topnav.responsive in mobile
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropClick"> <!--adding an id allows me to apply javaScript to this dropdown menu-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#study">Study</a></li>
+            <li><a href="#speak">Speak</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu ()">&#9776;</a></li>
+        </ul>
+    </nav>
+<div id="wrapper">
+    <div class="hero">
+		<h1></h1>
+	</div><!-- closes hero -->
+    <div class="container">
+        <div class="row">
+            <div class="col-x">
+                <div class="card">
+                    <i class="fas fa-american-sign-language-interpreting fa-3x"></i>
+                    <h2>Connect</h2>
+                    <p>Connect with other learners around the world.</p>
+                    <i class="fas fa-globe-americas fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-x">
+                <div class="card">
+                    <i class="fas fa-brain fa-3x"></i>
+                    <h2>Learn</h2>
+                    <p>Learn not just a new language, but a new way to see the world.</p>
+                    <i class="fas fa-eye fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-x">
+                <div class="card">
+                    <i class="fas fa-book-reader fa-3x"></i>
+                    <h2>Study</h2>
+                    <p>Study together in a peer-supported environment.</p>
+                    <i class="fas fa-users fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-x">
+                <div class="card">
+                    <i class="fas fa-comments fa-3x"></i>
+                    <h2>Speak</h2>
+                    <p>Speak to one another and share stories.</p>
+                    <i class="fas fa-allergies fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-x">
+                <div class="card">
+                    <i class="fas fa-heart fa-3x"></i>
+                    <h2>Support</h2>
+                    <p>Support one another on your language learning journies.</p>
+                    <i class="fas fa-road fa-3x"></i>
+                </div>
+            </div>
+        </div><!----closes row----->
+    </div><!-----closes container----->
+</div><!----closes wrapper-->
+<footer class="twoColumns">
+	<section>
+		<h3> Zachary Hill </h3>
+		<p>&copy; Copyright 2022</p>
+		<p>EME 6930 - Web Programming</p>
+	</section>
+	
+	<section>
+		<a href="https://www.facebook.com/Clsss-104343621476067"><i class="fab fa-facebook-square fa-3x"></i></a>
+		<a href="https://www.instagram.com/profe_zach/"><i class="fab fa-instagram-square fa-3x"></i></a>
+		<a href="https://www.youtube.com/channel/UCFfLqPJ7yPiI0VarB5aivoA"><i class="fab fa-youtube-square fa-3x"></i></a>
+	</section>
+</footer>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

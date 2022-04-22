@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>    
@@ -7,44 +8,71 @@
 <script type="text/javascript">
     //This website will be a waiting list, linked to Week 5, where parents can add their names to a waiting list to enroll in Tacoma Public Schools
     /* random celebs            0                 1              2                 3                     4                       5            */
-    var applicantNames = [" Aziz Ansari", 
-        " Benjamin Button", 
-        " Camilla Cabello", 
-        " Desmond Dekkar", 
-        " Emilio Estévez", 
-        " Franz Ferdinand",
-        " Gilberto Gil",
-        " Helen Hunt",
-        " Ivan Ilyich",
-        " Jesse Jackson", 
-        " Kiera Knightly", 
-        " Lauren Lucernoni", 
-        " Marilyn Manson", 
-        " Najwa Nimri", 
-        " Olive Oyl", 
-        " Peter Parker",
-        " Qiao Qiao",
-        " Rene Russo",
-        " Sylvester Stallone",
-        " Tina Turner",
-        " U Urça",
-        " Vince Vaughan", 
-        " Walter White",
-        " Xiaoliang Xie",
-        " Yoshiko Yamaguchi",
-        " Zinedine Zidane"
+    var applicantNames = [" Aziz Ansari", "  Benjamin Button", " Camilla Cabello", " Desmond Dekkar", " Will and Jada Pinkett Smith", " Patricia Teheran" ];
 
-      ];
-    //this is pretty similar to the in-class example, I'm trying to
-    function showWaitlist ()
-    {
-        document.getElementById("waitlist").innerHTML = "Here are the names currently on the waitlist: "  + applicantNames;
+    // Constructor function for Person objects
+function Persona(first, last, age, L1, L2) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.L1 = L1;
+    this.L2 = L2;
+    this.writePersona = function() {
+        var str = "";
+        str = str + this.firstName;
+        str = str + this.lastName;
+        str = str + this.age;
+        str = str + this.L1;
+        str = str + this.L2;
+        return str;
+        }
+
     }
+
+    function match(Persona1,Persona2){
+
+        if persona1.L2 == persona2.L2 == //this is where we left off
+    }
+
+    function writePersonas() {
+    var str = "";
+            
+            
+    for (i = 0; i < userPersonas.length; i++) {
+        str = str + userPersonas[i].writePersona();
+        }
+
+    document.getElementById("objects").innerHTML = str;
+
+}
+ 
+//user personas
+var userPersonas = [];
+
+function createPersonas() {
+    userPersonas [userPersonas.length] = new Persona("Aziz", "Ansari", 37, "English", "Italian");
+    userPersonas [userPersonas.length] = new Persona("Benjamin", "Button", 100, "English", "German");
+    userPersonas [userPersonas.length] = new Persona("Camilla", "Cabello", 27, "English", "German");
+    userPersonas [userPersonas.length] = new Persona("Desmond", "Dekkar", 67, "English", "Italian");
+   // userPersonas [userPersonas.length] = new Persona("", "", 37, "", "Italian");    
+    }
+
+
+
+//var numPersonas = 0;
+
+
+
+    //this is pretty similar to the in-class example, I'm trying to keep it simple
+    function showWaitlist ()
+        {
+        document.getElementById("waitlist").innerHTML = "Here are the names currently on the waitlist: "  + applicantNames;
+        }
 
     function addName ()
-    {
+        {
         applicantNames[applicantNames.length] = prompt("Add your name to the waiting list");
-    }
+        }
 
     function removeFromWaitlist ()
     {
@@ -55,7 +83,9 @@
 <!---To create consistency, I will use the same stylesheet as Week 5, with the same fixed header-->
 <link href="stylesheet3.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="createPersonas()">
+    <button onclick="writePersonas()">Click it</button>
+
     <header class="two_columns">
         <section>
         <h1><a href="https://www.tacomaschools.org/">Tacoma Public Schools</a></h1>
@@ -78,6 +108,7 @@
 </p>
     <br>
 <p id="waitlist"></p>
+<p id="objects"></p>
     <br>
 <input type="button" value="Add Your Name" onclick="addName()">
 <input type="button" value="Show Waitlist" onclick="showWaitlist()">

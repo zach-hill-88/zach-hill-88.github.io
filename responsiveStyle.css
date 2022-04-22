@@ -4,8 +4,7 @@ nav, header, footer {
 }
 body {
     line-height: 1;
-    margin: 0
-    ;
+    margin: 0;
 }
 .bg {
     background-image: url(images/shell.jpg);

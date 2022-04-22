@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 	    <link href="FontAwesome/css/all.css" rel=stylesheet type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
+    <script> //I learned this from a Udemy course, a simple way to make a dropDown menu
         function dropdownMenu (){
             var x = document.getElementById("dropClick");//by creating the variable "x" to represent this action, I can save time and space in the future
             if (x.className == "topnav"){
@@ -19,6 +19,8 @@
     </script>
 </head>
 <body>
+<!---Adding a responsive top navigation bar here--->
+    
     <nav>
         <ul class="topnav" id="dropClick"> <!--adding an id allows me to apply javaScript to this dropdown menu-->
             <li><a href="index.html">Home</a></li>
@@ -29,10 +31,12 @@
             <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu ()">&#9776;</a></li>
         </ul>
     </nav>
-
+<!--Adding a parallax background image here---->
     <div class="bg"></div>
+<!---Adding a two-column section here--->
     <div class="container" id="gradientBackground">
         <div class="row">
+<!---First Column-[form]-->
             <div class="col-6">
                 <div class="leftSide-col">
                     <h1 class="large">My Responsive Shell</h1>
@@ -51,9 +55,10 @@
                     <h1></h1>
                 </div>
             </div>
+<!---Second Column-[iframe]-->
             <div class="col-6">
                 <div class="rightSide-col">
-                <div class="videoContainer">
+                <div class="videoContainer"><!--Contains a Video I made for Digital Video "The Story of ME"---->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/DKcWmnnKS5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>        
                 </div>
@@ -63,12 +68,15 @@
 
 
     </div>
+<!---A line--->
     <hr>
     <header>
         <h1>Responsive Design Shell</h1>
     </header>
+<!---Another line--->
     <hr>
     <div class="container">
+<!---A three-column section, all awesome Fender Jaguars, in neat boxes--->
         <div class="row">
             <div class="col-4">
                 <div class="box">
@@ -98,6 +106,7 @@
                 </div>
             </div>
         </div>
+<!---A button which links to Week 6, "My Favorite Guitar"--->
         <div class="row">
             <div class="col-12">
                 <button class="learnMore"><a href="Week 6.html">Learn More!</a></button>
@@ -105,6 +114,8 @@
         </div>
     </div>
     <hr>
+<!---Another line --->
+<!---A section with text and images, three columns, ratio: 2 1 1--->
     <div class="container">
         <div class="row">
             
@@ -128,17 +139,20 @@
         </div>
 
     </div>
+<!---A nice footer with social media links using icons--->
 <footer>
     <div class="row">
         <div class="col-6">
             <h2><a href="https://zhill6668.wixsite.com/my-site"> Zachary Hill </a></h2>
             <p>&copy; Copyright 2022</p>
             <p>EME 6930 - Web Programming</p>
+            
         </div>
         <div class="col-6">
             <a href="https://www.linkedin.com/in/zach-hill-30651a1b7/"><i class="fab fa-brands fa-linkedin fa-3x"></i></i></a>
 		    <a href="https://www.instagram.com/profe_zach/"><i class="fab fa-instagram-square fa-3x"></i></a>
 		    <a href="https://www.youtube.com/channel/UCFfLqPJ7yPiI0VarB5aivoA"><i class="fab fa-youtube-square fa-3x"></i></a>
+            <p>What's Up!</p>
         </div>
     </div>
 </footer>
