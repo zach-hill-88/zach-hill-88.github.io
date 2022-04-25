@@ -17,6 +17,50 @@
                 x.className = "topnav";
             }
         }
+
+ /*       function alertUser (){
+             alert('you clicked my h2!')
+         }*/
+//There is probably a more efficient way to do this, but for now this what I got...
+        function showText1 (){
+            document.getElementById("pConnect").innerHTML = "Connect with other learners around the world."
+        }
+
+        function showText2 (){
+            document.getElementById("pLearn").innerHTML = "Learn not just a new language, but a new way to see the world."
+        }
+
+        function showText3 (){
+            document.getElementById("pStudy").innerHTML = "Study together in a peer-supported environment."
+        }
+
+        function showText4 (){
+            document.getElementById("pSpeak").innerHTML = "Speak to one another and share stories."
+        }
+
+        function showText5 (){
+            document.getElementById("pSupport").innerHTML = "Support one another on your language learning journies."
+        }
+
+      //  document.getElementById("card").addEventListener("mouseover", mouseOver);
+      //  document.getElementById("card").addEventListener("mouseout", mouseOut);
+
+        function mouseOver() {
+            document.getElementById("card").style.backgroundColor = "black";
+        }
+
+        function mouseOut() {
+            document.getElementById("card").style.backgroundColor = "#FCEBFA";
+        }
+
+       /* function mouseOver() {
+            document.getElementById("card1").style.backgroundColor = "black";
+        }
+
+        function mouseOut() {
+            document.getElementById("card1").style.backgroundColor = "#FCEBFA";
+        }*/   
+        //when I add this second function, only the second one chnages color, how to make them all do the same thing?
     </script>
 
 </head>
@@ -41,42 +85,42 @@
     <div class="container">
         <div class="row">
             <div class="col-x">
-                <div class="card">
+                <div class="card" id="card" onmouseover="mouseOver()" onmouseout="mouseOut()"><!---For some reason this mouseOver function is only working on this card-->
                     <i class="fas fa-american-sign-language-interpreting fa-3x"></i>
-                    <h2>Connect</h2>
-                    <p>Connect with other learners around the world.</p>
+                    <h2><a href="javascript:void(0)" onclick="showText1 ()">Connect</a></h2>
+                    <p id="pConnect"></p>
                     <i class="fas fa-globe-americas fa-3x"></i>
                 </div>
             </div>
             <div class="col-x">
-                <div class="card">
+                <div class="card" id="card1" onmouseover="mouseOver()" onmouseout="mouseOut()"><!---I copied the same code on to these cards, but they are not changing colors like the first one-->
                     <i class="fas fa-brain fa-3x"></i>
-                    <h2>Learn</h2>
-                    <p>Learn not just a new language, but a new way to see the world.</p>
+                    <h2><a href="javascript:void(0)" onclick="showText2 ()">Learn</a></h2>
+                    <p id="pLearn"></p>
                     <i class="fas fa-eye fa-3x"></i>
                 </div>
             </div>
             <div class="col-x">
-                <div class="card">
+                <div class="card" id="card2" onmouseover="mouseOver()" onmouseout="mouseOut()">
                     <i class="fas fa-book-reader fa-3x"></i>
-                    <h2>Study</h2>
-                    <p>Study together in a peer-supported environment.</p>
+                    <h2><a href="javascript:void(0)" onclick="showText3 ()">Study</a></h2>
+                    <p id="pStudy"></p>
                     <i class="fas fa-users fa-3x"></i>
                 </div>
             </div>
             <div class="col-x">
-                <div class="card">
+                <div class="card" id="card3" onmouseover="mouseOver()" onmouseout="mouseOut()">
                     <i class="fas fa-comments fa-3x"></i>
-                    <h2>Speak</h2>
-                    <p>Speak to one another and share stories.</p>
+                    <h2><a href="javascript:void(0)" onclick="showText4 ()">Speak</a></h2>
+                    <p id="pSpeak"></p>
                     <i class="fas fa-allergies fa-3x"></i>
                 </div>
             </div>
             <div class="col-x">
-                <div class="card">
+                <div class="card" id="card4" onmouseover="mouseOver()" onmouseout="mouseOut()">
                     <i class="fas fa-heart fa-3x"></i>
-                    <h2>Support</h2>
-                    <p>Support one another on your language learning journies.</p>
+                    <h2><a href="javascript:void(0)" onclick="showText5 ()">Support</a></h2>
+                    <p id="pSupport"></p>
                     <i class="fas fa-road fa-3x"></i>
                 </div>
             </div>

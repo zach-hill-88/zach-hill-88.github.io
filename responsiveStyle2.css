@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow: hidden;
 }
 .row::after {
     display: table;
@@ -107,6 +108,22 @@ ul.topnav li.dropdownIcon {
 
 h1,h2,h3,h4 {font-family: 'Open Sans Condensed', sans-serif;
 	color:darkorange;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+	color:navajowhite;
+}
+
+
+
+h2 a {
+    color:darkorange;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: navajowhite;
 }
 
 .hero {
