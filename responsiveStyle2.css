@@ -163,6 +163,14 @@ input[type="password"] {
     background-color:navajowhite;
 }
 
+select[type="range"] {
+    margin-left: 75px;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:navajowhite;
+}
+
 button.Submit {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -212,7 +220,14 @@ button.Submit {
 
 }
 
+.right-Column {
+ text-align: left;
+}
 
+div.right-Column.h2 {
+    color: darkslategray;
+   }
+   
 /*responsive footer that will show as two columns on desktop and one column on mobile*/
 footer {
 	display: grid;

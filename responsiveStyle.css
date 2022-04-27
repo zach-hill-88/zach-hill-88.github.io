@@ -273,14 +273,14 @@ footer p {
 }
  footer a {
      color: blanchedalmond;
- }
+}
 
 footer h2 a {
     color:peru;
     text-decoration: none;
 }
 
- footer a:hover {
+footer a:hover {
     color:pink;
 }
 
