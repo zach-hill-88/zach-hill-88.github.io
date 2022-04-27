@@ -45,21 +45,21 @@
       //  document.getElementById("card").addEventListener("mouseover", mouseOver);
       //  document.getElementById("card").addEventListener("mouseout", mouseOut);
 
-       function mouseOver() {
+ /*      function mouseOver() {
             document.getElementById("card").style.backgroundColor = "black";
         }
 
         function mouseOut() {
             document.getElementById("card").style.backgroundColor = "#FCEBFA";
-        } 
+        } */
 
-      /*  function mouseOver(aCard) {
+ function mouseOver(aCard) {
             document.getElementById(aCard).style.backgroundColor = "black";
         }
 
         function mouseOut(aCard) {
             document.getElementById(aCard).style.backgroundColor = "#FCEBFA";
-        }*/
+        }
 
        /* function mouseOver() {
             document.getElementById("card1").style.backgroundColor = "black";
@@ -92,7 +92,7 @@
     <div class="container">
         <div class="row">
             <div class="col-x">
-                <div class="card" id="card" onmouseover="mouseOver()" onmouseout="mouseOut()"><!---For some reason this mouseOver function is only working on this card-->
+                <div class="card" id="card" onmouseover="mouseOver('card')" onmouseout="mouseOut('card')"><!---For some reason this mouseOver function is only working on this card-->
                     <i class="fas fa-american-sign-language-interpreting fa-3x"></i>
                     <h2><a href="javascript:void(0)" onclick="showText1 ()">Connect</a></h2>
                     <p id="pConnect"></p>
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-x">
-                <div class="card" id="card1" onmouseover="mouseOver()" onmouseout="mouseOut()"><!---I copied the same code on to these cards, but they are not changing colors like the first one-->
+                <div class="card" id="card1" onmouseover="mouseOver('card1')" onmouseout="mouseOut('card1')"><!---I copied the same code on to these cards, but they are not changing colors like the first one-->
                     <i class="fas fa-brain fa-3x"></i>
                     <h2><a href="javascript:void(0)" onclick="showText2 ()">Learn</a></h2>
                     <p id="pLearn"></p>
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="col-x">
-                <div class="card" id="card2" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <div class="card" id="card2" onmouseover="mouseOver('card2')" onmouseout="mouseOut('card2')">
                     <i class="fas fa-book-reader fa-3x"></i>
                     <h2><a href="javascript:void(0)" onclick="showText3 ()">Study</a></h2>
                     <p id="pStudy"></p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="col-x">
-                <div class="card" id="card3" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <div class="card" id="card3" onmouseover="mouseOver('card3')" onmouseout="mouseOut('card3')">
                     <i class="fas fa-comments fa-3x"></i>
                     <h2><a href="javascript:void(0)" onclick="showText4 ()">Speak</a></h2>
                     <p id="pSpeak"></p>
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="col-x">
-                <div class="card" id="card4" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <div class="card" id="card4" onmouseover="mouseOver('card4')" onmouseout="mouseOut('card4')">
                     <i class="fas fa-heart fa-3x"></i>
                     <h2><a href="javascript:void(0)" onclick="showText5 ()">Support</a></h2>
                     <p id="pSupport"></p>
