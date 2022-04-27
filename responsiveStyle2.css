@@ -108,14 +108,8 @@ ul.topnav li.dropdownIcon {
 
 h1,h2,h3,h4 {font-family: 'Open Sans Condensed', sans-serif;
 	color:darkorange;
+    padding: 10px;
 }
-
-p {
-    font-family: 'Open Sans Condensed', sans-serif;
-	color:navajowhite;
-}
-
-
 
 h2 a {
     color:darkorange;
@@ -125,6 +119,62 @@ h2 a {
 h2 a:hover {
     color: navajowhite;
 }
+
+label {
+    color:darkslategray;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+	color:navajowhite;
+}
+
+input[type="text"] {
+    margin-left: 75px;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:navajowhite;
+}
+
+input[type="email"] {
+    margin-left: 75px;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:navajowhite;
+}
+
+input[type="number"] {
+    margin-left: 75px;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:navajowhite;
+}
+
+
+input[type="password"] {
+    margin-left: 75px;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:navajowhite;
+}
+
+button.Submit {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: navajowhite;
+    background-color:darkslategray;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+
+
+
 
 .hero {
 	display: grid;
@@ -155,6 +205,11 @@ h2 a:hover {
 .card i {
     color:navajowhite;
 	margin-top: 25px;
+}
+
+.left-Column {
+    background-color:#FCEBFA;
+
 }
 
 

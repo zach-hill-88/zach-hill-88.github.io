@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Week 10 - Final Project Part 2</title>
+    <link href="responsiveStyle2.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="FontAwesome/css/all.css" rel=stylesheet type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+//I learned this from a Udemy course, a simple way to make a dropDown menu
+        function dropdownMenu (){
+            var x = document.getElementById("dropClick");//by creating the variable "x" to represent this action, I can save time and space in the future
+            if (x.className == "topnav"){
+                x.className += " responsive";//this will change topnav to topnav.responsive in mobile
+            } else {
+                x.className = "topnav";
+            }
+        }
+//this prevents the page from refreshing when the form is submitted
+        const form=document.querySelector("#clsssForm");
+        form.addEventListener("submit", function(e){
+           e.preventDefault();
+        });
+
+    </script>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropClick"> <!--adding an id allows me to apply javaScript to this dropdown menu-->
+                <li><a href="Week 9.html">Home</a></li>
+                <li><a href="Week 10.html">Connect</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#study">Study</a></li>
+                <li><a href="#speak">Speak</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu ()">&#9776;</a></li>
+            </ul>
+        </nav>
+    <div id="wrapper">
+        <div class="hero">
+            <h1></h1>
+        </div><!-- closes hero -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="left-Column">
+                        <h1><em>Welcome to clsss!</em></h1>
+                        <h3>To begin connecting with other learners, please fill out the form below.</h3>
+                        <form action="#" id="clsssForm">
+                            <div>
+                                <label for="fname">First Name:</label><br><br>
+                                <input class="inputBox" type="text" id="fname" name="fname"><br><br>
+                                <label for="lname">Last Name:</label><br><br>
+                                <input class="inputBox" type="text" id="fname" name="fname"><br><br>
+                                <label for="fname">Age:</label><br><br>
+                                <input class="inputBox" type="number" id="age" name="age"><br><br>
+                                
+                                <button class="Submit">Submit</button>
+                            </div>
+
+                
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="twoColumns">
+            <section>
+                <h3> Zachary Hill </h3>
+                <p>&copy; Copyright 2022</p>
+                <p>EME 6930 - Web Programming</p>
+            </section>
+            
+            <section>
+                <a href="https://www.facebook.com/Clsss-104343621476067"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/profe_zach/"><i class="fab fa-instagram-square fa-3x"></i></a>
+                <a href="https://www.youtube.com/channel/UCFfLqPJ7yPiI0VarB5aivoA"><i class="fab fa-youtube-square fa-3x"></i></a>
+            </section>
+        </footer>
+    </body>
+    </html>
