@@ -130,6 +130,13 @@ p {
 	color:navajowhite;
 }
 
+#output {
+    color:navajowhite;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 input[type="text"] {
     margin-left: 75px;
     min-width: 100px;
@@ -163,12 +170,23 @@ input[type="password"] {
     background-color:navajowhite;
 }
 
+
+
 select[type="range"] {
     margin-left: 75px;
     min-width: 100px;
     padding-top: 10px;
     padding-bottom: 5px;
     background-color:navajowhite;
+}
+
+input[type="button"] {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: navajowhite;
+    background-color:darkslategray;
+    margin-left: 75px;
+    margin-bottom: 20px;
 }
 
 button.Submit {
@@ -343,6 +361,11 @@ footer a:hover {
 	}
 
     .col-x {
+        width:100%;
+        margin:auto;
+    }
+
+    .col-6 {
         width:100%;
         margin:auto;
     }

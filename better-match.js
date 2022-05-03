@@ -24,14 +24,22 @@ var persona5 = new Persona("Emilio", "Estévez", 37, "English", "Spanish");
 var persona6 = new Persona("Franz", "Ferdinand", 51, "German", "Russian");
 var persona7 = new Persona("Gilberto", "Gil", 79, "Portuguese", "English");
 var persona8 = new Persona("Helen", "Hunt", 58, "English", "German");
-var persona8 = new Persona("Ivan", "Illich", 76, "German", "Spanish");
-var persona8 = new Persona("Jesse", "Jackson", 80, "English", "Japanese");
-var persona8 = new Persona("Keira", "Knightly", 37, "English", "Tagalog");
-var persona8 = new Persona("Lauren", "Lucernoni", 29, "English", "Italian");
-var persona8 = new Persona("Najwa", "Nimri", 50, "Spanish", "French");
-var persona8 = new Persona("Olive", "Oyl", 19, "Italian", "Japanese");
-var persona8 = new Persona("Pablo", "Picasso", 84, "Spanish", "Portuguese");
-var persona8 = new Persona("Qiao", "Qiao", 42, "Mandarin", "English");
+var persona9 = new Persona("Ivan", "Illich", 76, "German", "Spanish");
+var persona10 = new Persona("Jesse", "Jackson", 80, "English", "Japanese");
+var persona11 = new Persona("Keira", "Knightly", 37, "English", "Turkish");
+var persona12 = new Persona("Lauren", "Lucernoni", 29, "English", "Italian");
+var persona13 = new Persona("Najwa", "Nimri", 50, "Spanish", "French");
+var persona14 = new Persona("Olive", "Oyl", 19, "Italian", "Japanese");
+var persona15 = new Persona("Pablo", "Picasso", 84, "Spanish", "Portuguese");
+var persona16 = new Persona("Qiao", "Qiao", 42, "Mandarin", "English");
+var persona17 = new Persona("Rene", "Russo", 68, "English", "French");
+var persona18 = new Persona("Sarah", "Silverman", 51, "English", "Italian");
+var persona19 = new Persona("Uğur", "Uçar", 35, "Turkish", "English");
+var persona20 = new Persona("Vince", "Vaughan", 52, "English", "Japanese");
+var persona21 = new Persona("Wilhelm", "Wundt", 88, "German", "English");
+var persona22 = new Persona("Xiaoliang", "Xie", 22, "Mandarin", "English");
+var persona23 = new Persona("Yoshiko", "Yamaguchi", 94, "Japanese", "English");
+var persona24 = new Persona("Zinedine", "Zinane", 49, "French", "Spanish");
 
 //This method pushes each persona into the array 
 userPersonas.push(persona1);
@@ -42,6 +50,23 @@ userPersonas.push(persona5);
 userPersonas.push(persona6);
 userPersonas.push(persona7);
 userPersonas.push(persona8);
+userPersonas.push(persona9);
+userPersonas.push(persona10);
+userPersonas.push(persona11);
+userPersonas.push(persona12);
+userPersonas.push(persona13);
+userPersonas.push(persona14);
+userPersonas.push(persona15);
+userPersonas.push(persona16);
+userPersonas.push(persona17);
+userPersonas.push(persona18);
+userPersonas.push(persona19);
+userPersonas.push(persona20);
+userPersonas.push(persona21);
+userPersonas.push(persona22);
+userPersonas.push(persona23);
+userPersonas.push(persona24);
+
 
 //This is a constructor function which creates each persona as an object and defines their properties
 function Persona(FName, LName, Age, L1, L2) {
@@ -69,7 +94,7 @@ function ProcessNewUser() {
 
 //This returns the values for the new user to the HTML file so they can see that their info has been recorded correctly
     var returnValue = "Your info has been stored as:";
-    returnValue += "<br>";
+    returnValue += "<br><br>";
     returnValue += "First Name: " + fname;
     returnValue += "<br>";
     returnValue += "Last Name: " + lname;
@@ -89,14 +114,14 @@ function ProcessNewUser() {
     var person = userPersonas[choosePerson];
 
     returnValue += "Your random match is: ";
-    returnValue += "<br>";
+    returnValue += "<br><br>";
     returnValue += "First Name: " + person.fname; 
     returnValue += "<br>";
     returnValue += "Last Name: " + person.lname;
     returnValue += "<br>";
     returnValue += "Age: " + person.age;
     returnValue += "<br>";
-    returnValue += "They native language is: " + person.l1;
+    returnValue += "Their native language is: " + person.l1;
     returnValue += "<br>";
     returnValue += "They are interested in learning: " + person.l2;
     returnValue += "</h1><br><br>";
