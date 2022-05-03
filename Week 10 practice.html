@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week 10 practice</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="better-match.js"></script>
+</head>
+<body>
+    <h1><em>Welcome to clsss!</em></h1>
+                        <h3>To begin connecting with other learners, please fill out the form below.</h3>
+                        <form action="#" id="clsssForm">
+                            <div>
+                                <label for="fname">First Name:</label><br><br>
+                                <input class="inputBox" type="text" id="fname" name="fname"><br><br>
+                                <label for="lname">Last Name:</label><br><br>
+                                <input class="inputBox" type="text" id="lname" name="lname"><br><br>
+                                <label for="age">Age:</label><br><br>
+                                <input class="inputBox" type="number" id="age" name="age"><br><br>
+                                <label for="L1">What is your native language?</label><br><br>
+                                <select id="myL1" class="inputBox" type="range">
+                                  <option>English</option>
+                                  <option>German</option>
+                                  <option>Italian</option>
+                                  <option>Japanese</option>
+                                  <option>Mandarin</option>
+                                  <option>Portuguese</option>
+                                  <option>Russian</option>
+                                  <option>Spanish</option>
+                                </select>
+                                <br><br>
+                                <label for="L2">What language are you learning?</label><br><br>
+                                <select id="myL2" class="inputBox" type="range">
+                                  <option>English</option>
+                                  <option>German</option>
+                                  <option>Italian</option>
+                                  <option>Japanese</option>
+                                  <option>Mandarin</option>
+                                  <option>Portuguese</option>
+                                  <option>Russian</option>
+                                  <option>Spanish</option>
+                                </select>
+                                <br><br>
+                                <input type="button" value="Submit" onclick="ProcessNewUser()">
+                            </div><!---closes div which contains form elements-->
+                        </form><!---closes form-->
+<input type="button" value="Get Match" onclick="twoPersonas()">
+<input type="button" value="Show Users" onclick="showUsers()">
+<input type="button" value="See User Info" onclick="writePersona()">
+<p id="users"></p>
+<p id="output">The Result value will go here</p>
+<p id="match">Match will go here...</p>
+</body>
+</html>

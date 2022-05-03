@@ -8,32 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 	<link href="FontAwesome/css/all.css" rel=stylesheet type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script> 
-//I learned this from a Udemy course, a simple way to make a dropDown menu
-        function dropdownMenu (){
-            var x = document.getElementById("dropClick");//by creating the variable "x" to represent this action, I can save time and space in the future
-            if (x.className == "topnav"){
-                x.className += " responsive";//this will change topnav to topnav.responsive in mobile
-            } else {
-                x.className = "topnav";
-            }
-        }
-//I learned this from a udemy course on form events, but none of it appears to be working at the moment...
-    /*    const form = document.querySelector("#clsssForm");
-        const input = document.querySelector("#fname");
-        const input = document.querySelector("#lname");
-        const input = document.querySelector("#age");
-        const list = document.querySelector("#match");
-        form.addEventListener("submit", function(e){//this prevents the page from refreshing when the form is submitted
-           e.preventDefault();
-           const fname = input.value;
-           const newLI = document.createElement("LI");
-           newLI.innerText = fName;
-           console.log(newLI);
-           list.append(newLI);
-        });
-
-    </script>
+    <script type="text/javascript" src="better-match.js"></script>
     </head>
     <body>
         <nav>
@@ -93,8 +68,8 @@
                                   <option>Tagalog</option>
                                 </select>
                                 <br><br>
-                                <button class="Submit">Submit</button>
-                             
+                                <input type="button" class="Submit" value="Submit" onclick="ProcessNewUser()">
+                                <p id="output"></p>
                             </div>
                         </form><!---closes form-->
                     </div><!---closes left column class-->
@@ -102,9 +77,7 @@
                 <div class="col-6">
                     <div class="right-Column">
                         <h3>Your best match is...</h3>
-                            <ul id="match"> 
-
-                            </ul>
+                            <p id="output"></p>
 
                     </div><!--closes right column class-->
                 </div>
